@@ -85,7 +85,7 @@ def choose_word(file_path, index):
         if index >= len(word_list):
             index = index % len(word_list)
         global secret_word
-        secret_word = word_list[index]
+        secret_word = word_list[index].lower()
         new_word_list = []
         for i in word_list:
             if i not in new_word_list:
